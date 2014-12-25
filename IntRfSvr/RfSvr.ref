@@ -1,0 +1,15 @@
+* Точка входа
+$ENTRY Go {=
+    <MsgLoop <Card>>
+}
+
+MsgLoop {
+    e.1 0 = <PostMsg e.1><Prout 'Good-bye!'>;
+    e.1 = <PostMsg e.1><MsgLoop <Card>>;
+}
+
+PostMsg  {
+    'Hello' = <Prout  'Hi!'>;
+    'Name?' = <Prout 'Refal Server'>;
+    e.1 = <Prout 'SORRY? ' e.1>;
+}
