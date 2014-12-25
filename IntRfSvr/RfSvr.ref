@@ -1,4 +1,4 @@
-* Точка входа
+* Sample interactive app
 $ENTRY Go {=
     <MsgLoop <Card>>
 }
